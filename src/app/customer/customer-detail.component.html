@@ -1,0 +1,13 @@
+<h2>CUSTOMER</h2>
+  <div *ngIf="customer">
+    <h3>"{{ customer.name }}"</h3>
+    <div>
+      <label>Id: </label>{{ customer.ctmId }}</div>
+    <div>
+      <label>Name: </label>
+      <input [(ngModel)]="customer.name" placeholder="name"/>
+    </div>
+    <p>
+      <button (click)="gotoCustomers()">Back</button>
+    </p>
+  </div>
