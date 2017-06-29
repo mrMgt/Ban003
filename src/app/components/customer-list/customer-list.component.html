@@ -1,0 +1,54 @@
+<md-card>
+	<md-list class="example-card">
+		<md-list-item *ngFor="let customer of customers | async">
+			<img md-list-avatar src="{{customer.img}}" alt="{{customer.name}}">
+			<h3 md-line> {{customer.name}} </h3>
+			<p md-line>
+			<span> {{customer.name}} </span>
+			<span class="demo-2"> -- {{customer.name}} </span>
+			</p>
+		</md-list-item>
+	</md-list>
+</md-card>
+
+<div flex-xs flex-gt-xs="50" layout="column" class="team1">
+		
+		<md-card class="cardTeam1">
+			<md-card-header>
+				<md-card-title>Team1</md-card-title>
+			</md-card-header>
+			<md-card-content>
+				<md-list-item *ngFor="let customer of customers | async">
+					<h3 md-line> {{customer.name}} </h3>
+				</md-list-item>
+		   </md-card-content>
+		</md-card>
+</div>
+
+<div flex-xs flex-gt-xs="50" layout="column" class="team2">
+		
+		<md-card class="cardTeam2">
+			<md-card-header>
+				<md-card-title>Team2</md-card-title>
+			</md-card-header>
+			<md-card-content>
+				<md-list-item *ngFor="let customer of customers | async">
+					<h3 md-line> {{customer.name}} </h3>
+				</md-list-item>
+		   </md-card-content>
+		</md-card>
+</div>
+
+<div flex-xs flex-gt-xs="50" layout="column" class="team3">
+		
+		<md-card class="cardTeam1">
+			<md-card-header>
+				<md-card-title>Team3</md-card-title>
+			</md-card-header>
+			<md-card-content>
+				<md-list-item *ngFor="let customer of customers | async">
+					<h3 md-line> {{customer.name}} </h3>
+				</md-list-item>
+		   </md-card-content>
+		</md-card>
+</div>

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Customer } from './customer';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/switchMap';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { CustomerService } from './customer.service';
+import { Customer } from '../../models/customer';
+import { CustomerService } from '../../services/customer.service';
 
 
 @Component({
@@ -14,8 +13,9 @@ import { CustomerService } from './customer.service';
 export class CustomerListComponent implements OnInit {
 
   customers: Observable<Customer[]>;
-
   private selectedId: number;
+  
+  
 
   constructor(
     private service: CustomerService,
@@ -38,5 +38,4 @@ export class CustomerListComponent implements OnInit {
   onSelect(customer: Customer) {
     this.router.navigate(['/customer', customer.ctmId]);
   }
-
 }

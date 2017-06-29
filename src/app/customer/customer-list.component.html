@@ -1,8 +1,0 @@
-<h2>CUSTOMER</h2>
-    <ul class="items">
-      <li *ngFor="let customer of customers | async"
-        [class.selected]="isSelected(customer)"
-        (click)="onSelect(customer)">
-        <span class="badge">{{ customer.ctmId }}</span> {{ customer.name }}
-      </li>
-    </ul>

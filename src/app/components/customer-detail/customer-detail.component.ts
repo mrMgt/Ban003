@@ -3,8 +3,8 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 // import { slideInDownAnimation } from '../animations';
-import { Customer } from './customer';
-import { CustomerService } from './customer.service';
+import { Customer } from '../../models/customer';
+import { CustomerService } from '../../services/customer.service';
 
 @Component({
   templateUrl: './customer-detail.component.html'
